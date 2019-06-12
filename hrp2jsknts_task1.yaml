@@ -1,0 +1,28 @@
+### sample yaml
+task:
+  type: 'sub_project'
+  name: 'Task1'
+  file: '$(find aizuspider_description)/Task1-Agent-System2019.cnoid'
+HRP2JSKNTS:
+  name: 'HRP2JSKNTS'
+  type: 'robot'
+  file: '$(find hrp2_models)/HRP2JSKNTS_for_OpenHRP3/HRP2JSKNTSmain_bush.wrl'
+  translation: [6, 0, 0.70]
+  rotation: [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+  joint_angles: [0.0, 0.0, -0.453786, 0.872665, -0.418879, 0.0, 0.0,
+                 0.0, 0.0, -0.453786, 0.872665, -0.418879, 0.0, 0.0,
+                 0.0, 0.0, 0.0, 0.0,
+                 0.174533, -0.174533, 0.0, -0.436332, 0.0, 0.0, -0.174533, 0.261799,
+                 0.174533, 0.174533, 0.0, -0.436332, 0.0, 0.0, -0.174533, -0.261799]
+  body_rtc:
+    name: 'HRP2JSKNTS(Robot)0'
+    module: '$(find hrpsys_choreonoid)/lib/RobotHardware_choreonoid.so'
+    config: '$(find hrpsys_choreonoid_tutorials)/config/BodyRTC_HRP2JSKNTS.RH.conf'
+    rate: 250
+  # vision:
+  #   body: 'JAXON_RED'
+  #   namelist: 'HEAD_LEFT_CAMERA, HEAD_RIGHT_CAMERA, HEAD_RANGE'
+sci1:
+  type: 'script'
+  file: '$(find hrpsys_choreonoid)/scripts/ros_service_server.py'
+start_simulation: True
