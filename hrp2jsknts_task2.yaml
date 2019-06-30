@@ -2,12 +2,12 @@
 task:
   type: 'sub_project'
   name: 'Task1'
-  file: '$(find aizuspider_description)/Task1-Agent-System2019.cnoid'
+  file: '$(find aizuspider_description)/Task2-Agent-System2019.cnoid'
 HRP2JSKNTS:
   name: 'HRP2JSKNTS'
   type: 'robot'
   file: '$(find hrp2_models)/HRP2JSKNTS_WITH_3HAND/HRP2JSKNTSmain_bush.wrl'
-  translation: [6, 0, 0.70]
+  translation: [5, 0, 0.70]
   rotation: [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
   joint_angles: [0.0, 0.0, -0.453786, 0.872665, -0.418879, 0.0, 0.0,
                  0.0, 0.0, -0.453786, 0.872665, -0.418879, 0.0, 0.0,
